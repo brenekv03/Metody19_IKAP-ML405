@@ -16,10 +16,21 @@ namespace Metody19_IKAP_ML405
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Umocní mocnitele na druhou
+        /// </summary>
+        /// <param name="mocnitel"></param>
+        /// <returns></returns>
         public static int Mocnina(int mocnitel)
         {
             return mocnitel * mocnitel;
         }
+        /// <summary>
+        /// Umocní mocnitele exponentem
+        /// </summary>
+        /// <param name="mocnitel"></param>
+        /// <param name="exponent"></param>
+        /// <returns></returns>
         public static double Mocnina(int mocnitel, int exponent)
         {
             double vysledek = 1;
