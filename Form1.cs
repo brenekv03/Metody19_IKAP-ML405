@@ -16,25 +16,25 @@ namespace Metody19_IKAP_ML405
         {
             InitializeComponent();
         }
-        public static int Mocnina(int a)
+        public static int Mocnina(int mocnitel)
         {
-            return a * a;
+            return mocnitel * mocnitel;
         }
-        public static double Mocnina(int a, int exponent)
+        public static double Mocnina(int mocnitel, int exponent)
         {
             double vysledek = 1;
             if (exponent < 0)
             {
                 for (int i = 1; i <= exponent * (-1); ++i)
                 {
-                    vysledek /= a;
+                    vysledek /= mocnitel;
                 }
             }
             else
             {
                 for (int i = 1; i <= exponent; i++)
                 {
-                    vysledek *= a;
+                    vysledek *= mocnitel;
                 }
             }
             return vysledek;
